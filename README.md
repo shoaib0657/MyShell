@@ -69,6 +69,10 @@ The `executeCommandRedirection` function allows the redirection of the output of
 
 ## `executePipedCommands`
 
+### Recommended videos
+- [Communicating between processes (using pipes) in C](https://youtu.be/Mqb2dVRe0uo?si=XbW6Z5_lT0NmKbwC)
+- [Simulating the pipe "|" operator in C](https://youtu.be/Mqb2dVRe0uo?si=XbW6Z5_lT0NmKbwC)
+
 The `executePipedCommands` function is responsible for parsing and executing a command line that may contain multiple commands separated by the `|` (pipe) operator. It also handles optional output redirection using `>` symbol. Here's how it works:
 
 - **Variables**:
