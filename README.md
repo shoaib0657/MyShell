@@ -69,10 +69,6 @@ The `executeCommandRedirection` function allows the redirection of the output of
 
 ## `executePipedCommands`
 
-### Recommended videos
-- [Communicating between processes (using pipes) in C](https://youtu.be/Mqb2dVRe0uo?si=XbW6Z5_lT0NmKbwC)
-- [Simulating the pipe "|" operator in C](https://youtu.be/Mqb2dVRe0uo?si=XbW6Z5_lT0NmKbwC)
-
 The `executePipedCommands` function is responsible for parsing and executing a command line that may contain multiple commands separated by the `|` (pipe) operator. It also handles optional output redirection using `>` symbol. Here's how it works:
 
 - **Variables**:
@@ -90,6 +86,10 @@ The `executePipedCommands` function is responsible for parsing and executing a c
   - If there is at least one command in the pipeline (i.e., `n_commands > 0`), the `executePipedCommands` function calls the `pipe_execute` function, passing the array of commands, the number of commands (`n_commands`), and the output file name (`outfile`) as arguments.
 
 ## `pipe_execute`
+
+### Recommended videos
+- [Communicating between processes (using pipes) in C](https://youtu.be/Mqb2dVRe0uo?si=XbW6Z5_lT0NmKbwC)
+- [Simulating the pipe "|" operator in C](https://youtu.be/Mqb2dVRe0uo?si=XbW6Z5_lT0NmKbwC)
 
 The `pipe_execute` function is responsible for executing a pipeline of commands, where the output of one command is used as the input for the next command. It handles the setup of pipes, forking of child processes, and redirection of input and output between commands. Below is a detailed breakdown of this function:
 
